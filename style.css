@@ -27,7 +27,7 @@
     justify-content: space-evenly;
     margin-right: 50px;
     align-items: center;
-    font-size: 18px;
+    font-size: 3vh;
     color: #5d1313;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
     font-weight: 600;
@@ -265,4 +265,18 @@
 
 .user > img{
     width: 20vh;
+}
+
+.items .active-logo{
+    width: 1px;
+}
+
+.offline-msg{
+    font-family:'Gill Sans', 'Trebuchet MS', sans-serif;
+    color: #898787;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
 }

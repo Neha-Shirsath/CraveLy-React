@@ -1,7 +1,8 @@
 import ResCard from "./restaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
-import { SEARCH_ICON } from "../utils/constants"
+import { SEARCH_ICON } from "../utils/constants";
+import useOnlineStatus from "../utils/useOnlinesStatus";
 
 const Appbody = () => {
 
@@ -26,6 +27,15 @@ const Appbody = () => {
     setFilteredListOfRes(restaurants)
     
    };
+
+
+   const onlineStatus = useOnlineStatus();
+
+   if (onlineStatus === false) 
+    return (
+       <h1 className="offline-msg">Looks like You're offline!!! Please check your internet connection...</h1>
+    );
+
 
     return listOfRes?.length === 0 ? (<Shimmer/>) : (
         <div className="app-body">

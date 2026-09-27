@@ -1,10 +1,12 @@
 import { LOGO_URL } from "../utils/constants";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlinesStatus";
 
 const Appheader = () => {
 
-    
+    const onlineStatus = useOnlineStatus();
+
     const [loginBtn, setLoginBtn] = useState("Login")
 
     return (
@@ -29,6 +31,7 @@ const Appheader = () => {
                                     : setLoginBtn("Login");
                     }}>
                     {loginBtn}</button></li>
+                    <li className="active-logo">{onlineStatus ? "🟢" : "🔴"}</li>
                 </ul>
             </div>
         </div>
