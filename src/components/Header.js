@@ -2,6 +2,7 @@ import { LOGO_URL } from "../utils/constants";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlinesStatus";
+import Grocery from "./Grocery";
 
 const Appheader = () => {
 
@@ -19,11 +20,14 @@ const Appheader = () => {
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     
-                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/about">About</Link></li>
 
-                    <li><Link to="/contact">Contact Us</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
 
                     <li><Link className="cart-logo">🛒Cart</Link></li>
+
+                    <li><Link to="/grocery">Grocery</Link></li>
+                    
                     <li><button className="login-btn" 
                         onClick = { () => {
                             loginBtn === "Login" 
