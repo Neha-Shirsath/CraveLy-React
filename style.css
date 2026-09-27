@@ -262,3 +262,7 @@
 .search-container{
     display: flex;
 }
+
+.user > img{
+    width: 20vh;
+}
