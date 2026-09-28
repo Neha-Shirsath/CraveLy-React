@@ -1,4 +1,4 @@
-import ResCard from "./restaurantCard";
+import ResCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { SEARCH_ICON } from "../utils/constants";
@@ -39,16 +39,16 @@ const Appbody = () => {
 
     return listOfRes?.length === 0 ? (<Shimmer/>) : (
         <div className="app-body">
-            <div className="searching">
+            <div className="searching flex m-4 p-4 ml-8">
                 <div className="search-container">
                     {/* <img src= {SEARCH_ICON} /> */}
-                    <input className="search" id="search" type="text" value={searchText} onChange={(e) => {
+                    <input className="search border border-solid border-black w-74  py-1 rounded-md px-2 " id="search" type="text" value={searchText} onChange={(e) => {
                         setSearchText(e.target.value)
                     }}
                     placeholder="Search for restaurant, cuisine or a dish"
                     />
 
-                    <button className="search-btn" onClick={() => {
+                    <button className="search-btn py-1 px-2 m-2 bg-red-200 rounded-md font-mono active:bg-red-400 hover:shadow-lg" onClick={() => {
                         const filteredBySearch = listOfRes.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()))
                         setFilteredListOfRes(filteredBySearch); 
                     }} 
@@ -56,14 +56,14 @@ const Appbody = () => {
                     >Search</button>
                 </div>
 
-            <div className="filter">
+            <div className="filter px-2 py-1 m-2 mx-1 bg-amber-100 rounded-md font-mono active:bg-amber-400 hover:shadow-lg">
                 <button className="top-res" onClick={() => { 
                     const filteredList = listOfRes.filter((res) => (res.info.avgRating > 4.2));
                     setFilteredListOfRes(filteredList);
                 }}>Top Restaurants</button>
             </div>
             </div>
-              <div className="res-container">
+              <div className="flex flex-wrap justify-evenly items-center">
                 {
                   filteredListOfRes?.map((restaurant) => (<ResCard key={restaurant.info.id} resData = {restaurant}/>))
                 }
