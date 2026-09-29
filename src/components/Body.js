@@ -4,6 +4,7 @@ import Shimmer from "./Shimmer";
 import { SEARCH_ICON } from "../utils/constants";
 import useOnlineStatus from "../utils/useOnlinesStatus";
 
+
 const Appbody = () => {
 
     const [listOfRes, setListOfRes] = useState([]);
@@ -58,7 +59,7 @@ const Appbody = () => {
 
             <div className="filter px-2 py-1 m-2 mx-1 bg-amber-100 rounded-md font-mono active:bg-amber-400 hover:shadow-lg">
                 <button className="top-res" onClick={() => { 
-                    const filteredList = listOfRes.filter((res) => (res.info.avgRating > 4.2));
+                    const filteredList = listOfRes.filter((res) => (res.info.avgRating > 4));
                     setFilteredListOfRes(filteredList);
                 }}>Top Restaurants</button>
             </div>

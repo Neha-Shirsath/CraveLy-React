@@ -3,22 +3,24 @@ import ResMenuData from "./ResMenuData";
 
 const useRestaurantMenu = (resId) => {
 
-    const [resInfo, setResInfo] = useState(null)
+    const [resInfo, setResInfo] = useState(null);
 
     useEffect(() => {
         fetchMenu();
-    },[])
+    }, [resId]);
 
     const fetchMenu = () => {
-        // const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=425&submitAction=ENTER")
-        // const json = await data.json();
 
-        // console.log(json)
-        // setResInfo(json.data)
-        console.log(ResMenuData)
-        setResInfo(ResMenuData.data)
-    }
+        const restaurant = ResMenuData.restaurants.find(
+            (res) => res.id === resId
+        );
+
+        console.log("Selected restaurant:", restaurant);
+
+        setResInfo(restaurant);
+    };
+
     return resInfo;
-}
+};
 
 export default useRestaurantMenu;
