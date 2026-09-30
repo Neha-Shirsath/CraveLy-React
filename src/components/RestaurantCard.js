@@ -36,11 +36,13 @@ const ResCard = (props) => {
 };
 
 
-export const WithVegRes = (ResCard) => {
+export const WithVegRes = (ResCard,  label, bgColor) => {
     return (props) => {
         return(
             <div>
-                <label className="absolute ml-4 bg-green-800 text-white px-2 font-mono rounded-br-xl rounded-tl-xl sh shadow-gray-800">VEG</label>
+                <label className={`absolute ml-4 ${bgColor} text-white px-2 font-mono rounded-br-xl rounded-tl-xl shadow-gray-800`}>
+                    {label}
+                </label>
                 <ResCard {...props} />
             </div>
         );

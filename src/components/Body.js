@@ -13,7 +13,9 @@ const Appbody = () => {
 
     const [searchText, setSearchText] = useState("")
 
-    const VegRes = WithVegRes(ResCard);
+
+    const VegRes = WithVegRes(ResCard, "VEG", "bg-green-800");
+    const NonVegRes = WithVegRes(ResCard, "NON-VEG", "bg-red-800");
     
 
     useEffect(() => {
@@ -76,7 +78,7 @@ const Appbody = () => {
                         <Link key={restaurant.info.id} to={`/restaurants/${restaurant.info.id}`} >
                             {restaurant.info.veg ? ( 
                                 <VegRes resData={restaurant} />)
-                                 : ( <ResCard resData={restaurant}/> )
+                                 : ( <NonVegRes resData={restaurant}/> )
                             }
                         </Link>
                     ))}

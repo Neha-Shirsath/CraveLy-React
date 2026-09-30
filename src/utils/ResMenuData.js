@@ -2464,6 +2464,44 @@ const ResMenuData = {
   ]
 },
 {
+  "id": "1211297",
+  "name": "Bhangyansh Fast Food",
+  "costForTwo": "₹200 for two",
+  "location": {
+    "locality": "Jayraj Nagar",
+    "area": "Civil Line"
+  },
+  "cuisines": [
+    "Chinese"
+  ],
+  "rating": "3.7",
+  "totalRatings": "1.2K+",
+  "imageId": "aa6c3e752b59318ae5ee49da9947fb1e",
+  "menu": [
+    {
+      "id": "12112971",
+      "category": "Chinese",
+      "items": [
+        {
+          "id": "121129711",
+          "name": "Veg Hakka Noodles",
+          "price": 149
+        },
+        {
+          "id": "121129712",
+          "name": "Veg Manchurian",
+          "price": 169
+        },
+        {
+          "id": "121129713",
+          "name": "Veg Fried Rice",
+          "price": 159
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "1428698",
   "name": "Sai Samarth Kitchen",
   "costForTwo": "₹200 for two",
