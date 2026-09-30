@@ -1,8 +1,9 @@
-import ResCard from "./RestaurantCard";
+import ResCard, { WithVegRes } from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { SEARCH_ICON } from "../utils/constants";
 import useOnlineStatus from "../utils/useOnlinesStatus";
+import { Link } from "react-router-dom";
 
 
 const Appbody = () => {
@@ -11,6 +12,9 @@ const Appbody = () => {
     const [filteredListOfRes, setFilteredListOfRes] = useState([]);
 
     const [searchText, setSearchText] = useState("")
+
+    const VegRes = WithVegRes(ResCard);
+    
 
     useEffect(() => {
         console.log("After rendered");
@@ -57,17 +61,25 @@ const Appbody = () => {
                     >Search</button>
                 </div>
 
-            <div className="filter px-2 py-1 m-2 mx-1 bg-amber-100 rounded-md font-mono active:bg-amber-400 hover:shadow-lg">
+            <div className="filter px-2 py-1 m-2 mx-1 bg-amber-100 rounded-lg font-mono active:bg-amber-400 hover:shadow-lg">
                 <button className="top-res" onClick={() => { 
                     const filteredList = listOfRes.filter((res) => (res.info.avgRating > 4));
                     setFilteredListOfRes(filteredList);
                 }}>Top Restaurants</button>
             </div>
             </div>
+
               <div className="flex flex-wrap justify-evenly items-center">
                 {
-                  filteredListOfRes?.map((restaurant) => (<ResCard key={restaurant.info.id} resData = {restaurant}/>))
-                }
+                  filteredListOfRes?.map((restaurant) => 
+                    (
+                        <Link key={restaurant.info.id} to={`/restaurants/${restaurant.info.id}`} >
+                            {restaurant.info.veg ? ( 
+                                <VegRes resData={restaurant} />)
+                                 : ( <ResCard resData={restaurant}/> )
+                            }
+                        </Link>
+                    ))}
               </div>
         </div>
     )

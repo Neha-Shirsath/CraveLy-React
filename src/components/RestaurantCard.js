@@ -15,8 +15,8 @@ const ResCard = (props) => {
     } = resData?.info;
 
     return (
-        <Link to={`/restaurants/${id}`}>
-            <div className="p-4 m-4 w-75 h-92 bg-gray-100 rounded-lg hover:bg-gray-200">
+        
+            <div className="p-4 m-4 w-75 h-94 bg-gray-100 rounded-lg hover:bg-gray-200">
 
                 <img
                     className="w-70 h-45 rounded-lg"
@@ -31,8 +31,20 @@ const ResCard = (props) => {
                 <p className="text-gray-800">{locality}</p>
 
             </div>
-        </Link>
+
     );
+};
+
+
+export const WithVegRes = (ResCard) => {
+    return (props) => {
+        return(
+            <div>
+                <label className="absolute ml-4 bg-green-800 text-white px-2 font-mono rounded-br-xl rounded-tl-xl sh shadow-gray-800">VEG</label>
+                <ResCard {...props} />
+            </div>
+        );
+    };
 };
 
 export default ResCard;
