@@ -2,40 +2,81 @@ import { LOGO_URL } from "../utils/constants";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlinesStatus";
-import Grocery from "./Grocery";
 
 const Appheader = () => {
 
     const onlineStatus = useOnlineStatus();
 
-    const [loginBtn, setLoginBtn] = useState("Login")
+    const [nightMode, setNightMode] = useState(false);
+    const [loginBtn, setLoginBtn] = useState("Login");
+
+    const toggleNightMode = () => {
+        setNightMode(!nightMode);
+        document.documentElement.classList.toggle("dark");
+    };
 
     return (
-        <div className="flex justify-between bg-amber-50 m-2 shadow-md font-mono">
+        <div className="flex justify-between bg-amber-50 dark:bg-neutral-400 m-2 shadow-md font-mono">
+
             <div className="logo-container">
-                <img className="w-29 p-2 relative rounded-full" src={LOGO_URL} alt="burger" />
-                <h3 className="absolute bottom-146 left-7 text-amber-950 font-bold font-sans text-xl">CraveLy</h3>
+                <img
+                    className="w-29 p-2 relative rounded-full"
+                    src={LOGO_URL}
+                    alt="burger"
+                />
+
+                <h3 className="absolute bottom-146 left-7 text-amber-950 font-bold font-sans text-xl">
+                    CraveLy
+                </h3>
             </div>
-            <div className="flex items-center text-xl font-bold ">
-                <ul className="flex p-4 gap-5">
-                    <li className="p-2 bg-amber-100 rounded-md hover:bg-amber-400"><Link to="/">Home</Link></li>
-                    
-                    <li className="p-2 bg-amber-100 rounded-md hover:bg-amber-400"><Link to="/about">About</Link></li>
 
-                    <li className="p-2 bg-amber-100 rounded-md hover:bg-amber-400"><Link to="/contact">Contact</Link></li>
+            <div className="flex items-center text-xl font-bold dark:text-white">
+                <ul className="flex p-3 gap-5 items-center">
 
-                    <li className="p-2 bg-amber-100 rounded-md hover:bg-amber-400"><Link className="cart-logo">🛒Cart</Link></li>
+                    <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md hover:bg-amber-400">
+                        <Link to="/">Home</Link>
+                    </li>
 
-                    <li className="p-2 bg-amber-100 rounded-md hover:bg-amber-400"><Link to="/grocery">Grocery</Link></li>
-                    
-                    <li className="p-2 bg-red-200 rounded-md hover:bg-red-400"><button className="login-btn" 
-                        onClick = { () => {
-                            loginBtn === "Login" 
+                    <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md hover:bg-amber-400">
+                        <Link to="/about">About</Link>
+                    </li>
+
+                    <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md hover:bg-amber-400">
+                        <Link to="/contact">Contact</Link>
+                    </li>
+
+                    <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md hover:bg-amber-400">
+                        <Link>🛒Cart</Link>
+                    </li>
+
+                    <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md  hover:bg-amber-400">
+                        <Link to="/grocery">Grocery</Link>
+                    </li>
+
+                    <li className="p-2 dark:text-white bg-red-200 dark:bg-blue-950 dark:hover:bg-blue-900 rounded-md hover:bg-red-400">
+                        <button className="cursor-pointer"
+                            onClick={() => {
+                                loginBtn === "Login"
                                     ? setLoginBtn("Logout")
                                     : setLoginBtn("Login");
-                    }}>
-                    {loginBtn}</button></li>
-                    <li className="px-3">{onlineStatus ? "🟢" : "🔴"}</li>
+                            }}
+                        >
+                            {loginBtn}
+                        </button>
+                    </li>
+
+                    <li className="p-3">
+                        {onlineStatus ? "🟢" : "🔴"}
+                    </li>
+
+                    {/* DARK MODE BUTTON */}
+                    <li
+                        className="p-3 text-2xl cursor-pointer"
+                        onClick={toggleNightMode}
+                    >
+                        {nightMode ? "☀️" : "🌙"}
+                    </li>
+
                 </ul>
             </div>
         </div>

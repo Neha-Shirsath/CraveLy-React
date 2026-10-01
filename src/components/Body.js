@@ -45,17 +45,18 @@ const Appbody = () => {
 
 
     return listOfRes?.length === 0 ? (<Shimmer/>) : (
-        <div className="app-body">
+        <div className="app-body dark:bg-neutral-400">
             <div className="searching flex m-4 p-4 ml-8">
                 <div className="search-container">
                     {/* <img src= {SEARCH_ICON} /> */}
-                    <input className="search border border-solid border-black w-74  py-1 rounded-md px-2 " id="search" type="text" value={searchText} onChange={(e) => {
+                    <input className="search border border-solid border-black w-74  py-1 rounded-md px-2 dark:text-black" id="search" type="text" value={searchText} onChange={(e) => {
                         setSearchText(e.target.value)
                     }}
                     placeholder="Search for restaurant, cuisine or a dish"
                     />
 
-                    <button className="search-btn py-1 px-2 m-2 bg-red-200 rounded-md font-mono active:bg-red-400 hover:shadow-lg" onClick={() => {
+                    <button className="search-btn py-1 px-2 m-2 bg-red-200 rounded-md font-mono active:bg-red-400 hover:shadow-lg cursor-pointer dark:bg-pink-900 dark:text-white dark:active:bg-red-400"
+                     onClick={() => {
                         const filteredBySearch = listOfRes.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()))
                         setFilteredListOfRes(filteredBySearch); 
                     }} 
@@ -63,8 +64,8 @@ const Appbody = () => {
                     >Search</button>
                 </div>
 
-            <div className="filter px-2 py-1 m-2 mx-1 bg-amber-100 rounded-lg font-mono active:bg-amber-400 hover:shadow-lg">
-                <button className="top-res" onClick={() => { 
+            <div className="filter px-2 py-1 m-2 mx-1 bg-amber-100 rounded-lg font-mono active:bg-amber-400 hover:shadow-lg dark:bg-blue-950 dark:text-white dark:active:bg-blue-600 ">
+                <button className="cursor-pointer" onClick={() => { 
                     const filteredList = listOfRes.filter((res) => (res.info.avgRating > 4));
                     setFilteredListOfRes(filteredList);
                 }}>Top Restaurants</button>

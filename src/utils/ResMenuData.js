@@ -732,6 +732,238 @@ const ResMenuData = {
     }
   ]
 },
+{
+  "id": "1029883",
+  "name": "Bikanerwala Restaurant",
+  "costForTwo": "₹250 for two",
+  "location": {
+    "locality": "Jayraj Nagar",
+    "area": ""
+  },
+  "cuisines": [
+    "Chaat",
+    "Sweets",
+    "Bihari",
+    "Ice Cream",
+    "Cakes",
+    "Food"
+  ],
+  "rating": "4.4",
+  "totalRatings": "1.2K+",
+  "imageId": "aa6c3e752b59318ae5ee49da9947fb1e",
+  "menu": [
+    {
+      "id": "10298831",
+      "category": "Chaat",
+      "items": [
+        {
+          "id": "102988311",
+          "name": "Pani Puri",
+          "price": 80
+        },
+        {
+          "id": "102988312",
+          "name": "Aloo Tikki Chaat",
+          "price": 120
+        },
+        {
+          "id": "102988313",
+          "name": "Raj Kachori",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "10298832",
+      "category": "Sweets",
+      "items": [
+        {
+          "id": "102988321",
+          "name": "Gulab Jamun",
+          "price": 100
+        },
+        {
+          "id": "102988322",
+          "name": "Rasgulla",
+          "price": 100
+        },
+        {
+          "id": "102988323",
+          "name": "Kaju Katli",
+          "price": 180
+        }
+      ]
+    },
+    {
+      "id": "10298833",
+      "category": "Bihari",
+      "items": [
+        {
+          "id": "102988331",
+          "name": "Litti Chokha",
+          "price": 180
+        },
+        {
+          "id": "102988332",
+          "name": "Sattu Paratha",
+          "price": 140
+        },
+        {
+          "id": "102988333",
+          "name": "Bihari Thali",
+          "price": 220
+        }
+      ]
+    },
+    {
+      "id": "10298834",
+      "category": "Ice Cream",
+      "items": [
+        {
+          "id": "102988341",
+          "name": "Vanilla Ice Cream",
+          "price": 90
+        },
+        {
+          "id": "102988342",
+          "name": "Chocolate Ice Cream",
+          "price": 110
+        },
+        {
+          "id": "102988343",
+          "name": "Butterscotch Ice Cream",
+          "price": 120
+        }
+      ]
+    },
+    {
+      "id": "10298835",
+      "category": "Cakes",
+      "items": [
+        {
+          "id": "102988351",
+          "name": "Chocolate Cake",
+          "price": 350
+        },
+        {
+          "id": "102988352",
+          "name": "Black Forest Cake",
+          "price": 400
+        },
+        {
+          "id": "102988353",
+          "name": "Pineapple Cake",
+          "price": 350
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "628428",
+  "name": "Govind Bhojanalay",
+  "costForTwo": "₹200 for two",
+  "location": {
+    "locality": "Civil Lines",
+    "area": ""
+  },
+  "cuisines": [
+    "North Indian",
+    "Thalis",
+    "Maharashtrian",
+    "Non Veg"
+  ],
+  "rating": "4.0",
+  "totalRatings": "1.2K+",
+  "imageId": "aa6c3e752b59318ae5ee49da9947fb1e",
+  "menu": [
+    {
+      "id": "6284281",
+      "category": "North Indian",
+      "items": [
+        {
+          "id": "62842811",
+          "name": "Paneer Butter Masala",
+          "price": 219
+        },
+        {
+          "id": "62842812",
+          "name": "Dal Tadka",
+          "price": 159
+        },
+        {
+          "id": "62842813",
+          "name": "Butter Roti",
+          "price": 35
+        }
+      ]
+    },
+    {
+      "id": "6284282",
+      "category": "Thalis",
+      "items": [
+        {
+          "id": "62842821",
+          "name": "Veg Thali",
+          "price": 180
+        },
+        {
+          "id": "62842822",
+          "name": "Special Thali",
+          "price": 220
+        },
+        {
+          "id": "62842823",
+          "name": "Maharashtrian Thali",
+          "price": 200
+        }
+      ]
+    },
+    {
+      "id": "6284283",
+      "category": "Maharashtrian",
+      "items": [
+        {
+          "id": "62842831",
+          "name": "Misal Pav",
+          "price": 120
+        },
+        {
+          "id": "62842832",
+          "name": "Pithla Bhakri",
+          "price": 160
+        },
+        {
+          "id": "62842833",
+          "name": "Bharli Vangi",
+          "price": 180
+        }
+      ]
+    },
+    {
+      "id": "6284284",
+      "category": "Non Veg",
+      "items": [
+        {
+          "id": "62842841",
+          "name": "Chicken Curry",
+          "price": 229
+        },
+        {
+          "id": "62842842",
+          "name": "Chicken Biryani",
+          "price": 229
+        },
+        {
+          "id": "62842843",
+          "name": "Chicken Thali",
+          "price": 249
+        }
+      ]
+    }
+  ]
+},
+
     {
       "id": "201968",
       "name": "Sukoon Biryani",
@@ -974,6 +1206,236 @@ const ResMenuData = {
         }
       ]
     },
+    {
+  "id": "980944",
+  "name": "New Sukoon Biryani",
+  "costForTwo": "₹200 for two",
+  "location": {
+    "locality": "Jayraj Nagar",
+    "area": ""
+  },
+  "cuisines": [
+    "Biryani",
+    "Indian",
+    "Cafe",
+    "Rice"
+  ],
+  "rating": "4.2",
+  "totalRatings": "1.2K+",
+  "imageId": "aa6c3e752b59318ae5ee49da9947fb1e",
+  "menu": [
+    {
+      "id": "9809441",
+      "category": "Biryani",
+      "items": [
+        {
+          "id": "98094411",
+          "name": "Chicken Biryani",
+          "price": 229
+        },
+        {
+          "id": "98094412",
+          "name": "Veg Biryani",
+          "price": 179
+        },
+        {
+          "id": "98094413",
+          "name": "Egg Biryani",
+          "price": 199
+        }
+      ]
+    },
+    {
+      "id": "9809442",
+      "category": "Indian",
+      "items": [
+        {
+          "id": "98094421",
+          "name": "Paneer Butter Masala",
+          "price": 219
+        },
+        {
+          "id": "98094422",
+          "name": "Dal Tadka",
+          "price": 159
+        },
+        {
+          "id": "98094423",
+          "name": "Butter Roti",
+          "price": 35
+        }
+      ]
+    },
+    {
+      "id": "9809443",
+      "category": "Cafe",
+      "items": [
+        {
+          "id": "98094431",
+          "name": "Cold Coffee",
+          "price": 119
+        },
+        {
+          "id": "98094432",
+          "name": "Cappuccino",
+          "price": 129
+        },
+        {
+          "id": "98094433",
+          "name": "Masala Tea",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "id": "9809444",
+      "category": "Rice",
+      "items": [
+        {
+          "id": "98094441",
+          "name": "Jeera Rice",
+          "price": 120
+        },
+        {
+          "id": "98094442",
+          "name": "Veg Fried Rice",
+          "price": 159
+        },
+        {
+          "id": "98094443",
+          "name": "Chicken Fried Rice",
+          "price": 199
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "706687",
+  "name": "Chai Sutta Bar MDR Mall",
+  "costForTwo": "₹200 for two",
+  "location": {
+    "locality": "Bapat Nagar",
+    "area": ""
+  },
+  "cuisines": [
+    "Pizzas",
+    "Sandwich",
+    "Burger",
+    "Snacks",
+    "Coffee"
+  ],
+  "rating": "4.0",
+  "totalRatings": "1.2K+",
+  "imageId": "aa6c3e752b59318ae5ee49da9947fb1e",
+  "menu": [
+    {
+      "id": "7066871",
+      "category": "Pizzas",
+      "items": [
+        {
+          "id": "70668711",
+          "name": "Margherita Pizza",
+          "price": 199
+        },
+        {
+          "id": "70668712",
+          "name": "Farmhouse Pizza",
+          "price": 249
+        },
+        {
+          "id": "70668713",
+          "name": "Cheese Burst Pizza",
+          "price": 279
+        }
+      ]
+    },
+    {
+      "id": "7066872",
+      "category": "Sandwich",
+      "items": [
+        {
+          "id": "70668721",
+          "name": "Veg Grilled Sandwich",
+          "price": 129
+        },
+        {
+          "id": "70668722",
+          "name": "Cheese Sandwich",
+          "price": 149
+        },
+        {
+          "id": "70668723",
+          "name": "Paneer Sandwich",
+          "price": 169
+        }
+      ]
+    },
+    {
+      "id": "7066873",
+      "category": "Burger",
+      "items": [
+        {
+          "id": "70668731",
+          "name": "Veg Burger",
+          "price": 129
+        },
+        {
+          "id": "70668732",
+          "name": "Cheese Burger",
+          "price": 159
+        },
+        {
+          "id": "70668733",
+          "name": "Paneer Burger",
+          "price": 179
+        }
+      ]
+    },
+    {
+      "id": "7066874",
+      "category": "Snacks",
+      "items": [
+        {
+          "id": "70668741",
+          "name": "French Fries",
+          "price": 99
+        },
+        {
+          "id": "70668742",
+          "name": "Cheese Fries",
+          "price": 129
+        },
+        {
+          "id": "70668743",
+          "name": "Veg Nuggets",
+          "price": 119
+        }
+      ]
+    },
+    {
+      "id": "7066875",
+      "category": "Coffee",
+      "items": [
+        {
+          "id": "70668751",
+          "name": "Cold Coffee",
+          "price": 119
+        },
+        {
+          "id": "70668752",
+          "name": "Cappuccino",
+          "price": 129
+        },
+        {
+          "id": "70668753",
+          "name": "Cafe Latte",
+          "price": 139
+        }
+      ]
+    }
+  ]
+},
     {
       "id": "237935",
       "name": "The N.D Hotel",
