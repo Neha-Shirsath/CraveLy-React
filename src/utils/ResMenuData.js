@@ -247,6 +247,200 @@ const ResMenuData = {
       ]
     },
     {
+  "id": "519976",
+  "name": "Gajanan Bhojanalay",
+  "costForTwo": "₹250 for two",
+  "location": {
+    "locality": "Civil Lines",
+    "area": "Civil Lines"
+  },
+  "cuisines": [
+    "North Indian",
+    "Thalis",
+    "Tandoor",
+    "Chinese",
+    "Healthy Food"
+  ],
+  "rating": "3.7",
+  "totalRatings": "100",
+  "imageId": "gajanan-bhojanalay",
+  "menu": [
+    {
+      "category": "North Indian",
+      "items": [
+        {
+          "id": "519976-n1",
+          "name": "Paneer Butter Masala",
+          "price": 180
+        },
+        {
+          "id": "519976-n2",
+          "name": "Kadhai Paneer",
+          "price": 190
+        },
+        {
+          "id": "519976-n3",
+          "name": "Dal Tadka",
+          "price": 140
+        },
+        {
+          "id": "519976-n4",
+          "name": "Mix Veg",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "category": "Thalis",
+      "items": [
+        {
+          "id": "519976-t1",
+          "name": "Special Veg Thali",
+          "price": 180
+        },
+        {
+          "id": "519976-t2",
+          "name": "Punjabi Thali",
+          "price": 200
+        },
+        {
+          "id": "519976-t3",
+          "name": "Mini Thali",
+          "price": 130
+        }
+      ]
+    },
+    {
+      "category": "Tandoor",
+      "items": [
+        {
+          "id": "519976-td1",
+          "name": "Tandoori Roti",
+          "price": 25
+        },
+        {
+          "id": "519976-td2",
+          "name": "Butter Naan",
+          "price": 50
+        },
+        {
+          "id": "519976-td3",
+          "name": "Paneer Tikka",
+          "price": 220
+        }
+      ]
+    },
+    {
+      "category": "Chinese",
+      "items": [
+        {
+          "id": "519976-c1",
+          "name": "Veg Hakka Noodles",
+          "price": 150
+        },
+        {
+          "id": "519976-c2",
+          "name": "Veg Fried Rice",
+          "price": 150
+        },
+        {
+          "id": "519976-c3",
+          "name": "Veg Manchurian",
+          "price": 160
+        },
+        {
+          "id": "519976-c4",
+          "name": "Chilli Paneer",
+          "price": 190
+        }
+      ]
+    },
+    {
+      "category": "Healthy Food",
+      "items": [
+        {
+          "id": "519976-h1",
+          "name": "Healthy Veg Bowl",
+          "price": 180
+        },
+        {
+          "id": "519976-h2",
+          "name": "Paneer Salad",
+          "price": 170
+        },
+        {
+          "id": "519976-h3",
+          "name": "Sprouts Salad",
+          "price": 120
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "1196293",
+  "name": "Hotel Mahal Biryani",
+  "costForTwo": "₹250 for two",
+  "location": {
+    "locality": "Jayraj Nagar",
+    "area": "Jayraj Nagar"
+  },
+  "cuisines": [
+    "Biryani",
+    "Drinks"
+  ],
+  "rating": "3.6",
+  "totalRatings": "100",
+  "imageId": "hotel-mahal-biryani",
+  "menu": [
+    {
+      "category": "Biryani",
+      "items": [
+        {
+          "id": "1196293-b1",
+          "name": "Chicken Biryani",
+          "price": 220
+        },
+        {
+          "id": "1196293-b2",
+          "name": "Mutton Biryani",
+          "price": 280
+        },
+        {
+          "id": "1196293-b3",
+          "name": "Egg Biryani",
+          "price": 160
+        },
+        {
+          "id": "1196293-b4",
+          "name": "Veg Biryani",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "category": "Drinks",
+      "items": [
+        {
+          "id": "1196293-d1",
+          "name": "Cold Drink",
+          "price": 50
+        },
+        {
+          "id": "1196293-d2",
+          "name": "Fresh Lime Soda",
+          "price": 60
+        },
+        {
+          "id": "1196293-d3",
+          "name": "Mineral Water",
+          "price": 30
+        }
+      ]
+    }
+  ]
+},
+    {
       "id": "639978",
       "name": "Kancha'S Fast Food",
       "costForTwo": "₹200 for two",
@@ -407,6 +601,137 @@ const ResMenuData = {
         }
       ]
     },
+    {
+  "id": "914665",
+  "name": "Banglore Bakery",
+  "costForTwo": "₹250 for two",
+  "location": {
+    "locality": "Kasturba Road",
+    "area": "Kasturba Road"
+  },
+  "cuisines": [
+    "Bakery",
+    "Street Food",
+    "Ice Creams",
+    "Cakes",
+    "Sweets"
+  ],
+  "rating": "3.6",
+  "totalRatings": "100",
+  "imageId": "banglore-bakery",
+  "menu": [
+    {
+      "category": "Cakes",
+      "items": [
+        {
+          "id": "914665-c1",
+          "name": "Chocolate Cake",
+          "price": 250
+        },
+        {
+          "id": "914665-c2",
+          "name": "Black Forest Cake",
+          "price": 280
+        },
+        {
+          "id": "914665-c3",
+          "name": "Pineapple Cake",
+          "price": 250
+        },
+        {
+          "id": "914665-c4",
+          "name": "Red Velvet Cake",
+          "price": 320
+        }
+      ]
+    },
+    {
+      "category": "Bakery",
+      "items": [
+        {
+          "id": "914665-b1",
+          "name": "Veg Puff",
+          "price": 35
+        },
+        {
+          "id": "914665-b2",
+          "name": "Paneer Puff",
+          "price": 45
+        },
+        {
+          "id": "914665-b3",
+          "name": "Chocolate Pastry",
+          "price": 80
+        },
+        {
+          "id": "914665-b4",
+          "name": "Cream Roll",
+          "price": 60
+        }
+      ]
+    },
+    {
+      "category": "Street Food",
+      "items": [
+        {
+          "id": "914665-s1",
+          "name": "Veg Sandwich",
+          "price": 90
+        },
+        {
+          "id": "914665-s2",
+          "name": "Cheese Sandwich",
+          "price": 110
+        },
+        {
+          "id": "914665-s3",
+          "name": "Veg Burger",
+          "price": 100
+        }
+      ]
+    },
+    {
+      "category": "Ice Creams",
+      "items": [
+        {
+          "id": "914665-i1",
+          "name": "Vanilla Ice Cream",
+          "price": 80
+        },
+        {
+          "id": "914665-i2",
+          "name": "Chocolate Ice Cream",
+          "price": 90
+        },
+        {
+          "id": "914665-i3",
+          "name": "Butterscotch Ice Cream",
+          "price": 100
+        }
+      ]
+    },
+    {
+      "category": "Sweets",
+      "items": [
+        {
+          "id": "914665-sw1",
+          "name": "Gulab Jamun",
+          "price": 80
+        },
+        {
+          "id": "914665-sw2",
+          "name": "Rasmalai",
+          "price": 100
+        },
+        {
+          "id": "914665-sw3",
+          "name": "Kaju Katli",
+          "price": 140
+        }
+      ]
+    }
+  ]
+},
     {
       "id": "201968",
       "name": "Sukoon Biryani",
@@ -2600,6 +2925,192 @@ const ResMenuData = {
           "id": "142869843",
           "name": "Medu Vada",
           "price": 80
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "266124",
+  "name": "Trimurti Restaurant",
+  "costForTwo": "₹200 for two",
+  "location": {
+    "locality": "Bazar Ward",
+    "area": ""
+  },
+  "cuisines": [
+    "Snacks",
+    "Sweets",
+    "South Indian"
+  ],
+  "rating": "4.3",
+  "totalRatings": "1.2K+",
+  "imageId": "aa6c3e752b59318ae5ee49da9947fb1e",
+  "menu": [
+    {
+      "id": "2661241",
+      "category": "Snacks",
+      "items": [
+        {
+          "id": "26612411",
+          "name": "Samosa",
+          "price": 30
+        },
+        {
+          "id": "26612412",
+          "name": "Kachori",
+          "price": 35
+        },
+        {
+          "id": "26612413",
+          "name": "Vada Pav",
+          "price": 49
+        }
+      ]
+    },
+    {
+      "id": "2661242",
+      "category": "Sweets",
+      "items": [
+        {
+          "id": "26612421",
+          "name": "Gulab Jamun",
+          "price": 80
+        },
+        {
+          "id": "26612422",
+          "name": "Rasgulla",
+          "price": 90
+        },
+        {
+          "id": "26612423",
+          "name": "Jalebi",
+          "price": 70
+        }
+      ]
+    },
+    {
+      "id": "2661243",
+      "category": "South Indian",
+      "items": [
+        {
+          "id": "26612431",
+          "name": "Masala Dosa",
+          "price": 120
+        },
+        {
+          "id": "26612432",
+          "name": "Idli Sambar",
+          "price": 90
+        },
+        {
+          "id": "26612433",
+          "name": "Medu Vada",
+          "price": 80
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "1427405",
+  "name": "Dakshin Swad",
+  "costForTwo": "₹200 for two",
+  "location": {
+    "locality": "Jayraj Nagar",
+    "area": ""
+  },
+  "cuisines": [
+    "South Indian",
+    "Pastas",
+    "Pizzas",
+    "Burgers"
+  ],
+  "rating": "4.0",
+  "totalRatings": "1.2K+",
+  "imageId": "aa6c3e752b59318ae5ee49da9947fb1e",
+  "menu": [
+    {
+      "id": "14274051",
+      "category": "South Indian",
+      "items": [
+        {
+          "id": "142740511",
+          "name": "Masala Dosa",
+          "price": 120
+        },
+        {
+          "id": "142740512",
+          "name": "Idli Sambar",
+          "price": 90
+        },
+        {
+          "id": "142740513",
+          "name": "Medu Vada",
+          "price": 80
+        }
+      ]
+    },
+    {
+      "id": "14274052",
+      "category": "Pastas",
+      "items": [
+        {
+          "id": "142740521",
+          "name": "White Sauce Pasta",
+          "price": 179
+        },
+        {
+          "id": "142740522",
+          "name": "Red Sauce Pasta",
+          "price": 169
+        },
+        {
+          "id": "142740523",
+          "name": "Cheese Pasta",
+          "price": 199
+        }
+      ]
+    },
+    {
+      "id": "14274053",
+      "category": "Pizzas",
+      "items": [
+        {
+          "id": "142740531",
+          "name": "Margherita Pizza",
+          "price": 199
+        },
+        {
+          "id": "142740532",
+          "name": "Farmhouse Pizza",
+          "price": 249
+        },
+        {
+          "id": "142740533",
+          "name": "Cheese Burst Pizza",
+          "price": 279
+        }
+      ]
+    },
+    {
+      "id": "14274054",
+      "category": "Burgers",
+      "items": [
+        {
+          "id": "142740541",
+          "name": "Veg Burger",
+          "price": 129
+        },
+        {
+          "id": "142740542",
+          "name": "Cheese Burger",
+          "price": 159
+        },
+        {
+          "id": "142740543",
+          "name": "Double Cheese Burger",
+          "price": 199
         }
       ]
     }
