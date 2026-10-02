@@ -1,9 +1,10 @@
 import ResCard, { WithVegRes } from "./RestaurantCard";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { SEARCH_ICON } from "../utils/constants";
 import useOnlineStatus from "../utils/useOnlinesStatus";
 import { Link } from "react-router-dom";
+import UserContext from "../utils/UserContext";
 
 
 const Appbody = () => {
@@ -43,6 +44,7 @@ const Appbody = () => {
        <h1 className="offline-msg">Looks like You're offline!!! Please check your internet connection...</h1>
     );
 
+    const { loggedInUser, setUserName } =  useContext(UserContext)
 
     return listOfRes?.length === 0 ? (<Shimmer/>) : (
         <div className="app-body dark:bg-neutral-400">
@@ -61,17 +63,25 @@ const Appbody = () => {
                         setFilteredListOfRes(filteredBySearch); 
                     }} 
                     
-                    >Search</button>
+                    >🔎Search</button>
                 </div>
 
             <div className="filter px-2 py-1 m-2 mx-1 bg-amber-100 rounded-lg font-mono active:bg-amber-400 hover:shadow-lg dark:bg-blue-950 dark:text-white dark:active:bg-blue-600 ">
                 <button className="cursor-pointer" onClick={() => { 
                     const filteredList = listOfRes.filter((res) => (res.info.avgRating > 4));
                     setFilteredListOfRes(filteredList);
-                }}>Top Restaurants</button>
-            </div>
+                }}>⭐Top Rated</button>
             </div>
 
+             
+            <div className="filter px-2 py-1 m-2 mx-1 bg-zinc-100 rounded-lg font-mono hover:shadow-lg dark:bg-blue-950 dark:text-white dark:active:bg-blue-600 ">
+                <label>UserName </label>
+                <input className="border-2 rounded-lg border-zinc-700 px-1"
+                value={loggedInUser} 
+                onChange={(e) => setUserName(e.target.value)} ></input>
+            </div>
+
+            </div>
               <div className="flex flex-wrap justify-evenly items-center">
                 {
                   filteredListOfRes?.map((restaurant) => 

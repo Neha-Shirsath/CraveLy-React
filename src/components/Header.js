@@ -1,7 +1,8 @@
 import { LOGO_URL } from "../utils/constants";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlinesStatus";
+import UserContext from "../utils/UserContext";
 
 const Appheader = () => {
 
@@ -9,6 +10,8 @@ const Appheader = () => {
 
     const [nightMode, setNightMode] = useState(false);
     const [loginBtn, setLoginBtn] = useState("Login");
+
+    const { loggedInUser } = useContext(UserContext)
 
     const toggleNightMode = () => {
         setNightMode(!nightMode);
@@ -30,19 +33,19 @@ const Appheader = () => {
                 </h3>
             </div>
 
-            <div className="flex items-center text-xl font-bold dark:text-white">
+            <div className="flex items-center text-lg font-bold dark:text-white">
                 <ul className="flex p-3 gap-5 items-center">
 
                     <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md hover:bg-amber-400">
-                        <Link to="/">Home</Link>
+                        <Link to="/">🏠Home</Link>
                     </li>
 
                     <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md hover:bg-amber-400">
-                        <Link to="/about">About</Link>
+                        <Link to="/about">ℹ️About</Link>
                     </li>
 
                     <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md hover:bg-amber-400">
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/contact">📞Contact</Link>
                     </li>
 
                     <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md hover:bg-amber-400">
@@ -50,7 +53,7 @@ const Appheader = () => {
                     </li>
 
                     <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md  hover:bg-amber-400">
-                        <Link to="/grocery">Grocery</Link>
+                        <Link to="/grocery">🛍️Grocery</Link>
                     </li>
 
                     <li className="p-2 dark:text-white bg-red-200 dark:bg-blue-950 dark:hover:bg-blue-900 rounded-md hover:bg-red-400">
@@ -65,16 +68,20 @@ const Appheader = () => {
                         </button>
                     </li>
 
-                    <li className="p-3">
-                        {onlineStatus ? "🟢" : "🔴"}
+                    <li className="bg-emerald-300 p-2 rounded-md hover:bg-emerald-500 dark:text-white dark:bg-emerald-500 dark:hover:bg-emerald-300">
+                        👤{loggedInUser}
+                    </li>
+
+                    <li className="p-1">
+                        {onlineStatus ? "Online🟢" : "Offline🔴"}
                     </li>
 
                     {/* DARK MODE BUTTON */}
                     <li
-                        className="p-3 text-2xl cursor-pointer"
+                        className="p-1 text-lg font-md cursor-pointer"
                         onClick={toggleNightMode}
                     >
-                        {nightMode ? "☀️" : "🌙"}
+                        {nightMode ? "☀️Light" : "🌙Dark"}
                     </li>
 
                 </ul>
