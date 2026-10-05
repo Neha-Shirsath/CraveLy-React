@@ -3,6 +3,7 @@ import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlinesStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Appheader = () => {
 
@@ -17,6 +18,9 @@ const Appheader = () => {
         setNightMode(!nightMode);
         document.documentElement.classList.toggle("dark");
     };
+
+    //subscribing to the cart using a selector
+    const cartItems = useSelector((store) => store.cart.items);
 
     return (
         <div className="flex justify-between bg-amber-50 dark:bg-neutral-400 m-2 shadow-md font-mono">
@@ -48,13 +52,15 @@ const Appheader = () => {
                         <Link to="/contact">📞Contact</Link>
                     </li>
 
-                    <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md hover:bg-amber-400">
-                        <Link>🛒Cart</Link>
-                    </li>
-
                     <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md  hover:bg-amber-400">
                         <Link to="/grocery">🛍️Grocery</Link>
                     </li>
+                     
+                    <li className="p-2 bg-amber-100 dark:bg-neutral-700 dark:hover:bg-black rounded-md hover:bg-amber-400">
+                        <Link to="/cart">🛒{cartItems.length}</Link>
+                    </li>
+
+                    
 
                     <li className="p-2 dark:text-white bg-red-200 dark:bg-blue-950 dark:hover:bg-blue-900 rounded-md hover:bg-red-400">
                         <button className="cursor-pointer"
