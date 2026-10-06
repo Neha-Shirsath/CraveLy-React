@@ -32,7 +32,7 @@ const Appheader = () => {
                     alt="burger"
                 />
 
-                <h3 className="absolute bottom-146 left-7 text-amber-950 font-bold font-sans text-xl">
+                <h3 className="absolute bottom-152 left-7 text-amber-950 font-bold font-sans text-xl">
                     CraveLy
                 </h3>
             </div>
