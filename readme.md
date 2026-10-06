@@ -1,4 +1,6 @@
-# React Projects
+# CraveLy - Food Ordering App
+## React Project
+🔗 [Live Demo](https://cravelyfood.vercel.app/)
 
 ## Parcel
 - dev build
